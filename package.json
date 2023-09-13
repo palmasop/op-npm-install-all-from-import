@@ -1,12 +1,23 @@
 {
   "name": "op-npm-install-all-from-import",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Auto install all missing package from your import",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "npm",
+    "package",
+    "installation",
+    "import",
+    "dependencies",
+    "project",
+    "automation",
+    "Node.js",
+    "development"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/palmasop/op-npm-install-all-from-import.git"
