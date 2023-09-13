@@ -23,20 +23,6 @@ npm install -g op-npm-install-all-from-import
 
 ## Usage
 
-To use `op-npm-install-all-from-import`, simply run it in your project directory. It will scan your project files, identify import statements, and install missing npm packages.
-
-```bash
-op-npm-install-all-from-import
-```
-
-You can also specify a directory path to scan if your project structure is different from the default.
-
-```bash
-op-npm-install-all-from-import /path/to/your/project
-```
-
-## Programmatically
-
 You can use `op-npm-install-all-from-import` programmatically in your Node.js scripts:
 
 ```javascript

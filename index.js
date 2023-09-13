@@ -1,10 +1,6 @@
 import fs from 'fs';
 import { execSync } from 'child_process';
-import { fileURLToPath } from 'url';
 
-// Define the directory where your project's source files are located
-const projectDirectory = fileURLToPath(new URL('.', import.meta.url));
-// Regular expression to match import statements
 const importRegex = /import\s+(?:\{\s*([^}]+)\s*\}|([^}\n]+))\s+from\s+['"]([^'"]+)['"]/g;
 
 function isPackageInstalled(packageName) {
@@ -54,10 +50,10 @@ function processDirectory(directoryPath) {
     }
 }
 
-async function load(dir) {
-    console.log("Finding...")
-    await processDirectory(dir ?? projectDirectory);
-    console.log("All package had successfully Installed!")
+async function load(dir = process.cwd()) {
+    console.log(`Finding from ${dir}...`)
+    await processDirectory(dir);
+    console.log("All packages have been successfully installed!")
 }
 
 export default load;

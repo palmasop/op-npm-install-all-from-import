@@ -1,7 +1,7 @@
 {
   "name": "op-npm-install-all-from-import",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.9",
   "description": "Auto install all missing package from your import",
   "main": "index.js",
   "scripts": {
@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/palmasop/op-npm-install-all-from-import/issues"
   },
-  "homepage": "https://github.com/palmasop/op-npm-install-all-from-import#readme"
+  "homepage": "https://github.com/palmasop/op-npm-install-all-from-import#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
 }
